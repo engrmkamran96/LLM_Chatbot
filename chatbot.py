@@ -20,11 +20,11 @@ ENV_GROQ_API_KEY= os.getenv("GROQ_API_KEY","").strip()
 #Streamlit Page Config
 
 st.set_page_config(
-    page_title="LLM Chatbot by MKamran",
+    page_title="LLM Chatbot",
     page_icon="😒",
     layout="centered"
 )
-st.title ("🗣️ LLM Conversation AI Chatbot")
+st.title ("🗣️ LLM Conversation AI Chatbot by MKamran ")
 st.caption(" Bot is Built with Streamlit + Langchain + Groq Cloud API")
 
 #Sidebar Control 
@@ -199,6 +199,7 @@ st.download_button(
     file_name="chat_history.json",
     mime="application/json",
 )
+
 
 
 
