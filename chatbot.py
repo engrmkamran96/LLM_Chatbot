@@ -13,7 +13,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 
 
 #Load env
-#load_dotenv()
+load_dotenv()
 ENV_GROQ_API_KEY= os.getenv("GROQ_API_KEY","").strip()
 
 
@@ -199,4 +199,5 @@ st.download_button(
     file_name="chat_history.json",
     mime="application/json",
 )
+
 
